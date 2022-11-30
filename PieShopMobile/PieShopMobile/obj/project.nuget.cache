@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fM429L5/7gaNZ0RAzFH34P4s7WS2vgwgFHfmVKTTiRNyCtfgdPJWyhxWQEGQ0TDmMI14Z2Fd+7EFdHFI3NNFXw==",
+  "dgSpecHash": "/dYbaHIuKMd94bmxbbe8QC+LtItZ2WJfgUU0jLAsa2IkKFhwS1TBr6a/FYffLIHd2AwBBcefS/2eYJyWt5XzAw==",
   "success": true,
-  "projectFilePath": "C:\\projects\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj",
+  "projectFilePath": "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CorneliousT\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.3\\xamarin.androidx.activity.1.1.0.3.nupkg.sha512",

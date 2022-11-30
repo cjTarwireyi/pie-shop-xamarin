@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj": {}
+    "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj": {}
   },
   "projects": {
-    "C:\\projects\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj": {
+    "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj",
+        "projectUniqueName": "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj",
         "projectName": "PieShopMobile",
-        "projectPath": "C:\\projects\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj",
+        "projectPath": "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShopMobile\\PieShopMobile.csproj",
         "packagesPath": "C:\\Users\\CorneliousT\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\PieShopMobile\\PieShopMobile\\obj\\",
+        "outputPath": "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShopMobile\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
