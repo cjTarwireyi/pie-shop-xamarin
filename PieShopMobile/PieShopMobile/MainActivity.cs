@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Widget;
@@ -22,8 +23,10 @@ namespace PieShopMobile
 
         private void MyButton_Click(object sender, EventArgs e)
         {
-            var toast = Toast.MakeText(this, "A button was clicked", ToastLength.Short);
-            toast.Show();
+            //var toast = Toast.MakeText(this, "A button was clicked", ToastLength.Short);
+            //toast.Show();
+            Intent intent = new Intent(this, typeof(Activity1));
+            StartActivity(intent);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -31,6 +34,18 @@ namespace PieShopMobile
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+        protected override void OnResume()
+        {
+            base.OnResume();
+        }
+        protected override void OnStart()
+        {
+            base.OnStart();
+        }
+        protected override void OnStop()
+        {
+            base.OnStop();
         }
     }
 }
