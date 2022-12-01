@@ -1003,6 +1003,16 @@
         "build": {
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
+      },
+      "PieShop.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PieShop.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PieShop.Core.dll": {}
+        }
       }
     }
   },
@@ -1844,10 +1854,16 @@
         "xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
+    },
+    "PieShop.Core/1.0.0": {
+      "type": "project",
+      "path": "../PieShop.Core/PieShop.Core.csproj",
+      "msbuildProject": "../PieShop.Core/PieShop.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v13.0": [
+      "PieShop.Core >= 1.0.0",
       "Xamarin.AndroidX.AppCompat >= 1.2.0.5",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Google.Android.Material >= 1.0.0.1"
@@ -1888,7 +1904,11 @@
       },
       "frameworks": {
         "monoandroid13.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShop.Core\\PieShop.Core.csproj": {
+              "projectPath": "C:\\projects\\pie-shop-xamarin\\PieShopMobile\\PieShop.Core\\PieShop.Core.csproj"
+            }
+          }
         }
       }
     },
