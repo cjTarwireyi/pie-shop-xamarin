@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+  <style name="PieTheme" parent="android:Theme.Material.Light">
+    <item name="android:colorPrimary">@color/pieGreen</item>
+    <item name="android:colorAccent">@color/pieBeige</item>
+  </style>
+
+  <style name="PieGreenText" parent="TextAppearance.AppCompat">
+    <item name="android:textColor">#23cfa7</item>
+  </style>
 </resources>
