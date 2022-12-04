@@ -8,7 +8,7 @@ using System;
 
 namespace PieShopMobile
 {
-    [Activity(Label = "PieDetailActivity", MainLauncher =true)]
+    [Activity(Label = "PieDetailActivity", MainLauncher =false)]
     public class PieDetailActivity : Activity
     {
         private PieRepository _pieRepository;
