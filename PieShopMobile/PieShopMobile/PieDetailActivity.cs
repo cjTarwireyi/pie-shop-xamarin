@@ -4,7 +4,6 @@ using Android.Widget;
 using BethanysPieShopMobile.Utility;
 using PieShop.Core.Models;
 using PieShop.Core.Repository;
-using System;
 
 namespace PieShopMobile
 {

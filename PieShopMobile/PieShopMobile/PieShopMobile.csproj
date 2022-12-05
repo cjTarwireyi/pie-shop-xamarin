@@ -62,7 +62,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity1.cs" />
     <Compile Include="Adapters\PieAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PieDetailActivity.cs" />
