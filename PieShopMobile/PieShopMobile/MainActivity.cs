@@ -25,8 +25,8 @@ namespace PieShopMobile
         {
             //var toast = Toast.MakeText(this, "A button was clicked", ToastLength.Short);
             //toast.Show();
-            Intent intent = new Intent(this, typeof(Activity1));
-            StartActivity(intent);
+            //Intent intent = new Intent(this, typeof(Activity1));
+            //StartActivity(intent);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

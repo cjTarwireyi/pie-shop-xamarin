@@ -4,11 +4,10 @@ using Android.Widget;
 using BethanysPieShopMobile.Utility;
 using PieShop.Core.Models;
 using PieShop.Core.Repository;
-using System;
 
 namespace PieShopMobile
 {
-    [Activity(Label = "PieDetailActivity", MainLauncher =true)]
+    [Activity(Label = "PieDetailActivity", MainLauncher =false)]
     public class PieDetailActivity : Activity
     {
         private PieRepository _pieRepository;
