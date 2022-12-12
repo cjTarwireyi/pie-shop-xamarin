@@ -5,7 +5,7 @@ using PieShopMobile.Adapters;
 
 namespace PieShopMobile
 {
-    [Activity(Label = "PieMenuActivity", MainLauncher = true)]
+    [Activity(Label = "PieMenuActivity", MainLauncher = false)]
     public class PieMenuActivity : Activity
     {
         private RecyclerView _pieRecyclerView;
