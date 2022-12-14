@@ -1,7 +1,9 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using AndroidX.RecyclerView.Widget;
 using PieShopMobile.Adapters;
+using System;
 
 namespace PieShopMobile
 {
@@ -24,9 +26,18 @@ namespace PieShopMobile
             _pieRecyclerView.SetLayoutManager(_pieLayoutManager);
 
             _pieAdapter = new PieAdapter();
+            _pieAdapter.ItemClick += PieAdapter_ItemClick;
             _pieRecyclerView.SetAdapter(_pieAdapter);
 
             // Create your application here
+        }
+
+        private void PieAdapter_ItemClick(object sender, int e)
+        {
+            var intent = new Intent();
+            intent.SetClass(this, typeof(PieDetailActivity));
+            intent.PutExtra("selectedPieId", e);
+            StartActivity(intent);
         }
     }
 }

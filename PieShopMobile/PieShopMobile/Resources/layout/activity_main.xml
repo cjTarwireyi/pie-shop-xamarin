@@ -22,5 +22,14 @@
         android:textColor="#ffffff"
         android:layout_gravity="center_horizontal"
         android:width="200dp"/>
+      <Button
+        android:text="View shopping cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartButton"
+        android:backgroundTint="#23cfa7"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:width="200dp" />
   
 </LinearLayout>

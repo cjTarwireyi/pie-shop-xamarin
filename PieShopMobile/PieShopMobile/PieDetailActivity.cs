@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Media.Metrics;
 using Android.OS;
 using Android.Widget;
 using BethanysPieShopMobile.Utility;
@@ -25,7 +26,8 @@ namespace PieShopMobile
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.pie_detail);
             _pieRepository = new PieRepository();
-            _selectedPie = _pieRepository.GetPieById(1);
+            var selectedPieId = Intent.Extras.GetInt("selectedPieId");
+            _selectedPie = _pieRepository.GetPieById(selectedPieId);
             findViews();
             BindData();
             // Create your application here
@@ -52,6 +54,15 @@ namespace PieShopMobile
             _priceTextView = FindViewById<TextView>(Resource.Id.priceTextView);
             _amountEditText = FindViewById<EditText>(Resource.Id.amountEditText);
             _addToCartButton = FindViewById<Button>(Resource.Id.addToCartButton);
+        }
+        public void AddToCartButton_Click(object sender, Event e)
+        {
+            var amount = int.Parse(_amountEditText.Text);
+            ShoppingCartRepository shoppingCartRepository= new ShoppingCartRepository();
+            shoppingCartRepository.AddToShoppingCart(_selectedPie, amount);
+            Toast.MakeText(Application.Context, "Pie added to cart", ToastLength.Long).Show();
+
+            this.Finish();
         }
     }
 }
