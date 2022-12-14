@@ -12,6 +12,7 @@ namespace PieShopMobile
     public class MainActivity : AppCompatActivity
     {
         private Button _orderButton;
+        private Button _cartButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -24,7 +25,14 @@ namespace PieShopMobile
         }
         private void LinkEventHandlers()
         {
+            _cartButton.Click += CartButton_Click;
             _orderButton.Click += _orderButton_Click;
+        }
+
+        private void CartButton_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(CartActivity));
+            StartActivity(intent);
         }
 
         private void _orderButton_Click(object sender, EventArgs e)
@@ -36,6 +44,7 @@ namespace PieShopMobile
         private void FindViews()
         {
             _orderButton = FindViewById<Button>(Resource.Id.orderButton);
+            _cartButton = FindViewById<Button>(Resource.Id.cartButton);
         }
         private void MyButton_Click(object sender, EventArgs e)
         {
