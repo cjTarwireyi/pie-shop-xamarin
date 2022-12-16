@@ -5,6 +5,7 @@ using Android.Widget;
 using BethanysPieShopMobile.Utility;
 using PieShop.Core.Models;
 using PieShop.Core.Repository;
+using System;
 
 namespace PieShopMobile
 {
@@ -30,7 +31,12 @@ namespace PieShopMobile
             _selectedPie = _pieRepository.GetPieById(selectedPieId);
             findViews();
             BindData();
+            LinkEventHandlers();
             // Create your application here
+        }
+        private void LinkEventHandlers()
+        {
+            _addToCartButton.Click += AddToCartButton_Click;
         }
 
         private void BindData()
@@ -55,7 +61,7 @@ namespace PieShopMobile
             _amountEditText = FindViewById<EditText>(Resource.Id.amountEditText);
             _addToCartButton = FindViewById<Button>(Resource.Id.addToCartButton);
         }
-        public void AddToCartButton_Click(object sender, Event e)
+        public void AddToCartButton_Click(object sender, EventArgs e)
         {
             var amount = int.Parse(_amountEditText.Text);
             ShoppingCartRepository shoppingCartRepository= new ShoppingCartRepository();

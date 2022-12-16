@@ -17,8 +17,8 @@ namespace BethanysPieShopMobile.ViewHolders
         public CartViewHolder(View itemView, Action<int> listener) : base(itemView)
         {
             PieImageView = itemView.FindViewById<ImageView>(Resource.Id.pieImageView);
-          //  PieNameTextView = itemView.FindViewById<TextView>(Resource.Id.pieNameTextView);
-            //PieAmountTextView = itemView.FindViewById<TextView>(Resource.Id.pieamoints);
+            PieNameTextView = itemView.FindViewById<TextView>(Resource.Id.pieNameTextView);
+            PieAmountTextView = itemView.FindViewById<TextView>(Resource.Id.pieAmountTexrView);
 
             itemView.Click += (sender, e) => listener(base.LayoutPosition);
         }

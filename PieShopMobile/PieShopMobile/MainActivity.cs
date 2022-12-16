@@ -13,6 +13,8 @@ namespace PieShopMobile
     {
         private Button _orderButton;
         private Button _cartButton;
+        private Button _aboutButton;
+        private Button _tabsOrderButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,6 +29,14 @@ namespace PieShopMobile
         {
             _cartButton.Click += CartButton_Click;
             _orderButton.Click += _orderButton_Click;
+            _aboutButton.Click += _aboutButton_Click;
+            _tabsOrderButton.Click += TabsOrderButton_Click;
+        }
+
+        private void _aboutButton_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(AboutActivity));
+            StartActivity(intent);
         }
 
         private void CartButton_Click(object sender, EventArgs e)
@@ -40,11 +50,17 @@ namespace PieShopMobile
             Intent intent = new Intent(this, typeof(PieMenuActivity));
             StartActivity(intent);
         }
-
+        private void TabsOrderButton_Click(object sender, System.EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(PieMenuTabsActivity));
+            StartActivity(intent);
+        }
         private void FindViews()
         {
             _orderButton = FindViewById<Button>(Resource.Id.orderButton);
             _cartButton = FindViewById<Button>(Resource.Id.cartButton);
+            _aboutButton = FindViewById<Button>(Resource.Id.aboutButton);
+            _tabsOrderButton = FindViewById<Button>(Resource.Id.tabsOrderButton);
         }
         private void MyButton_Click(object sender, EventArgs e)
         {
