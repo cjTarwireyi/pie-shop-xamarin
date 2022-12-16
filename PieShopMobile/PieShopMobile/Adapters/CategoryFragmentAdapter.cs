@@ -1,6 +1,7 @@
 ﻿using AndroidX.Fragment.App;
 using PieShop.Core.Models;
 using PieShop.Core.Repository;
+using PieShopMobile.Fragments;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,16 +19,16 @@ namespace PieShopMobile.Adapters
         }
         public override int Count => _categories.Count;
 
+        //public override Fragment GetItem(int position)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         public override Fragment GetItem(int position)
         {
-            throw new NotImplementedException();
+            PieCategoryFragment pieCategoryFragment = new PieCategoryFragment(_categories[position]);
+            return pieCategoryFragment;
         }
-
-        //public override Android.Support.V4.App.Fragment GetItem(int position)
-        //{
-        //    PieCategoryFragment pieCategoryFragment = new PieCategoryFragment(_categories[position]);
-        //    return pieCategoryFragment;
-        //}
 
         public override Java.Lang.ICharSequence GetPageTitleFormatted(int position)
         {

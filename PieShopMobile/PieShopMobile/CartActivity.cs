@@ -18,7 +18,10 @@ namespace PieShopMobile
             SetContentView(Resource.Layout.cart);
 
             _cartRecyclerView = FindViewById<RecyclerView>(Resource.Id.cartRecyclerView);
-
+            _cartLayoutManager = new LinearLayoutManager(this);
+            _cartRecyclerView.SetLayoutManager(_cartLayoutManager);
+            _shoppingCartAdapter = new ShoppingCartAdapter();
+            _cartRecyclerView.SetAdapter(_shoppingCartAdapter);
             // Create your application here
         }
     }
