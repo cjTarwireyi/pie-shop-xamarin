@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using Android;
-using Android.Views;
+﻿using Android.Views;
 using AndroidX.RecyclerView.Widget;
 using BethanysPieShopMobile.Utility;
 using BethanysPieShopMobile.ViewHolders;

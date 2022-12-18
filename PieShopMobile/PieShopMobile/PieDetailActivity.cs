@@ -1,5 +1,4 @@
 ﻿using Android.App;
-using Android.Media.Metrics;
 using Android.OS;
 using Android.Widget;
 using BethanysPieShopMobile.Utility;
