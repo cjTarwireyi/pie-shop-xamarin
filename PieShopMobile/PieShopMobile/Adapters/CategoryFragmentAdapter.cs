@@ -2,10 +2,7 @@
 using PieShop.Core.Models;
 using PieShop.Core.Repository;
 using PieShopMobile.Fragments;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 namespace PieShopMobile.Adapters
 {
     public class CategoryFragmentAdapter : FragmentPagerAdapter
