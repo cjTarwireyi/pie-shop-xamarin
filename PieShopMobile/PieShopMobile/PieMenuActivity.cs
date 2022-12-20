@@ -4,6 +4,7 @@ using Android.OS;
 using AndroidX.RecyclerView.Widget;
 using PieShopMobile.Adapters;
 using System;
+using System.Threading.Tasks;
 
 namespace PieShopMobile
 {
@@ -13,11 +14,10 @@ namespace PieShopMobile
         private RecyclerView _pieRecyclerView;
         private RecyclerView.LayoutManager _pieLayoutManager;
         private PieAdapter _pieAdapter;
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected async override  void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            base.OnCreate(savedInstanceState);
+           
             SetContentView(Resource.Layout.pie_menu);
             _pieRecyclerView = FindViewById<RecyclerView>(Resource.Id.pieMenuRecyclerView);
 
@@ -26,6 +26,7 @@ namespace PieShopMobile
             _pieRecyclerView.SetLayoutManager(_pieLayoutManager);
 
             _pieAdapter = new PieAdapter();
+            await _pieAdapter.LoadData();
             _pieAdapter.ItemClick += PieAdapter_ItemClick;
             _pieRecyclerView.SetAdapter(_pieAdapter);
 

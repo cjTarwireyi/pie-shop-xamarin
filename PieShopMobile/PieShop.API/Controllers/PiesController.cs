@@ -1,12 +1,13 @@
-﻿using BethanysPieShopMobile.API.Repository;
+﻿using PieShopMobile.API.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace PieShopMobile.API.Controllers
+namespace Mobile.API.Controllers
 {
     [Route("api/[controller]")]
-    public class PiesController : Controller
+    [ApiController]
+    public class PiesController : ControllerBase
     {
         private readonly PieRepository _pieRepository;
 
