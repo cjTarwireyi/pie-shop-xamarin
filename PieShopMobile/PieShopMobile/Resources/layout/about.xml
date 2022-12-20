@@ -22,4 +22,36 @@
         android:textColor="#ffffffff"
         android:layout_gravity="center_horizontal"
         android:width="200dp" />
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="Your comment: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:paddingTop="20dp"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/feedbackText"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+    <Button
+        android:text="Send us an email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailButton"
+        android:backgroundTint="#23cfa7"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:width="200dp" />
 </LinearLayout>

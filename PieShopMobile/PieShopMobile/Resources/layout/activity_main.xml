@@ -49,5 +49,13 @@
         android:textColor="#ffffffff"
         android:layout_gravity="center_horizontal"
         android:width="200dp" />
-  
+   <Button
+        android:text="Shop Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shopLocationButton"
+        android:backgroundTint="#23cfa7"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center_horizontal"
+        android:width="200dp" />
 </LinearLayout>
