@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PieShopMobile.Adapters
 {
@@ -26,8 +27,13 @@ namespace PieShopMobile.Adapters
         }
         public PieAdapter()
         {
-            var pieRepo = new PieRepository();
-            _pies = pieRepo.GetAllPies();
+            //var pieRepo = new PieRepository();
+            //_pies = pieRepo.GetAllPies();
+        }
+        public async Task LoadData()
+        {
+            var pieRepository = new PieRepositoryWeb(); 
+            _pies = await pieRepository.GetAllPiesAsync();
         }
         public override int ItemCount => _pies.Count();
 
