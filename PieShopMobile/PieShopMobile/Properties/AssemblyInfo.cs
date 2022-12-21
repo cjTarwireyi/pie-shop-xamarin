@@ -15,7 +15,6 @@ using Android.App;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
-[assembly: Application(UsesCleartextTraffic = true)]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -25,3 +24,8 @@ using Android.App;
 //      Revision
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+#if DEBUG
+[assembly: Application(Debuggable = true, UsesCleartextTraffic = true)]
+#else
+[assembly: Application(Debuggable =false,UsesCleartextTraffic = false)]
+#endif
