@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using   PieShopMobile.API.Model;
+﻿using PieShopMobile.API.Model;
 
-namespace   PieShopMobile.API.Repository
+namespace PieShopMobile.API.Repository
 {
     public class ShoppingCartRepository
     {

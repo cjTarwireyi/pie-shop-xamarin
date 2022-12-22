@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace   PieShopMobile.API.Model
+﻿namespace PieShopMobile.API.Model
 {
     public class ShoppingCart
     {
