@@ -3,8 +3,6 @@ using Android.Content;
 using Android.OS;
 using AndroidX.RecyclerView.Widget;
 using PieShopMobile.Adapters;
-using System;
-using System.Threading.Tasks;
 
 namespace PieShopMobile
 {
